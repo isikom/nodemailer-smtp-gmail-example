@@ -1,0 +1,20 @@
+{
+  "name": "nodemailer-smtp-gmail",
+  "version": "1.0.0",
+  "description": "Example for using Nodemailer with Gmail SMTP",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/isikom/nodemailer-smtp-gmail-example"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michele Menciassi",
+  "license": "MIT",
+  "dependencies": {
+    "config": "^1.30.0",
+    "nodemailer": "^4.6.7"
+  }
+}
