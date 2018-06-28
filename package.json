@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/isikom/nodemailer-smtp-gmail-example"
+    "url": "https://github.com/isikom/nodemailer-smtp-gmail-example.git"
   },
   "scripts": {
     "start": "node index.js",
