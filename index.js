@@ -8,8 +8,6 @@
 
 const nodemailer = require("nodemailer");
 const config = require("config");
-const { google } = require("googleapis");
-const OAuth2 = google.auth.OAuth2;
 
 let transporter = nodemailer.createTransport(config.get('transport'));
 
