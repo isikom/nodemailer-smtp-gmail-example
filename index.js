@@ -8,8 +8,17 @@
 
 const nodemailer = require("nodemailer");
 const config = require("config");
+const { google } = require("googleapis");
+const OAuth2 = google.auth.OAuth2;
 
 let transporter = nodemailer.createTransport(config.get('transport'));
+
+transporter.on('token', token => {
+    console.log('A new access token was generated');
+    console.log('User: %s', token.user);
+    console.log('Access Token: %s', token.accessToken);
+    console.log('Expires: %s', new Date(token.expires));
+});
 
 transporter.sendMail(config.get('mail'), (err, info) => {
   if (err)
